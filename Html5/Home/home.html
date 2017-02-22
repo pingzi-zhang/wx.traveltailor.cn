@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1,maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="browsermode" content="application"/>
+	<meta name="imagemode" content="force">
+    <title>首页</title>
+    <!-- 引用animate动画库 -->
+    <link type="text/css" href="../../Css/lib/animate.min.css" rel="stylesheet"/>
+    <!-- 引用字体库 -->
+    <link type="text/css" rel="stylesheet" href="../../fontawesome/css/font-awesome.css">
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用轮播样式 -->
+    <link type="text/css" href="../../Css/lib/swiper-3.3.1.min.css" rel="stylesheet" />
+    <!-- 引用自己 -->
+    <link type="text/css" href="../../Css/Home/home.css" rel="stylesheet" />
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+	<!-- 引用插件 -->
+	<script type="text/javascript" src="../../Js/lib/swiper.min.js"></script>
+	<script type="text/javascript" src="../../Js/Home/iscroll.js"></script>
+	<!-- 引用自己 -->
+	<script type="text/javascript" src="../../Js/Home/home.js"></script>
+</head>
+<body>
+	<section id="homeiscroll">
+
+	<div id="wrapper">
+	<div id="pullDown">
+        <span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新……</span>
+   </div>
+	<div class="swiper-container" id="homeBanner">
+	    <div class="swiper-wrapper" id="myWrapper">
+	       <!--  <div class="swiper-slide" onclick="location.href='bulter.html'">
+	       	<img src="../../Images/Home/shoutu1.jpg"/>
+	       </div>
+	       
+	       <div class="swiper-slide" onclick="location.href='bulter.html'">
+	       	<img src="../../Images/Home/shoutu1.jpg"/>
+	       </div>
+	       <div class="swiper-slide" onclick="location.href='bulter.html'">
+	       	<img src="../../Images/Home/shoutu1.jpg"/>
+	       </div> -->
+	    </div>
+	    <div class="swiper-pagination"></div>
+	</div>
+	<div id="nav">
+		<ul>
+			<li class="active">
+				<a href="doorticket.html"><img src="../../Images/Home/jingqu.png"></a>
+				<p>门票</p>
+			</li>
+			<li>
+				<a href="food.html"><img src="../../Images/Home/mei.png"></a>
+				<p>美食</p>
+			</li>
+			<li>
+				<a href="specialty.html"><img src="../../Images/Home/techan1.png"></a>
+				<p>特产</p>
+			</li>
+			<li>
+				<a href="bulter.html"><img src="../../Images/Home/guanjia.png"></a>
+				<p>管家</p>
+			</li>
+			
+		</ul>
+	</div>
+	<!-- <div  class="loadbox">
+		<div class="loading">
+			<i class="icono-gear spin"></i>正在加载中……
+		</div>
+	</div> -->
+	<div class="blank"></div>
+	<div class="content">
+		<!-- <h1>最新管家</h1> -->
+		
+		<div class="newbulter"></div>
+		
+		<!-- <li onclick="location.href='bulterHome.html'">
+			<img src="../../Images/Home/newbutler.jpg" >
+			<p>骨灰级美食顾问给你一场舌尖上的幸福</p>
+			<p><span>紫雨</span>/<span>成都</span>·<span>25岁</span>·<span>女</span>·<span>当地达人</span></p>
+		</li>
+		<li onclick="location.href='bulterHome.html'">
+			<img src="../../Images/Home/newblter2.jpg" >
+			<p>骨灰级美食顾问给你一场舌尖上的幸福</p>
+			<p>码语者/成都·25岁·女·当地达人</p>
+		</li> -->
+	</div>
+	<div class="blank"></div>
+	<div class="selling">
+		<h1>热销产品</h1>
+		<div class="hot products">
+			<!-- <li>
+				<img src="../../Images/Home/newbutler.jpg" >
+				<p>骨灰级美食顾问给你一场舌尖上的幸福</p>
+				<p>紫雨/成都·25岁·女·当地达人</p>
+			</li>
+			<li>
+				<img src="../../Images/Home/newblter2.jpg" >
+				<p>骨灰级美食顾问给你一场舌尖上的幸福</p>
+				<p>码语者/成都·25岁·女·当地达人</p>
+			</li> -->
+		</div>
+	</div>
+	<div id="pullUp">
+		<span class="pullUpIcon"></span>
+		<span class="pullUpLabel">Pull up to refresh...</span>
+	</div>
+	</div>
+	</section>
+	<div class="footer" id="footer">
+		<div class="active home"><a href="home.html"><i class="fa fa-home"></i><p>首页</p></a></div>
+		<div class="customized"><a href="../Customized/CustomizedMessage.html"><i class="fa fa-list"></i><p>定制</p></div>
+		<div class="orderform"><a href="../Orderform/currentOrder.html"><i class="fa fa-shopping-cart"></i><p>订单</p></a></div>
+		<div onclick="Denglu()"><i class="fa fa-user"></i><p>我的</p></div>
+	</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"		
+	});
+</script>

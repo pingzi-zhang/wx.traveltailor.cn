@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>申请退款</title>
+    <!-- 引用animate动画库 -->
+    <link type="text/css" href="../../Css/lib/animate.min.css" rel="stylesheet"/>
+    <!-- 引用字体库 -->
+    <link type="text/css" rel="stylesheet" href="../../fontawesome/css/font-awesome.css">
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用自己 -->
+    <link type="text/css" href="../../Css/Orderform/refoundreson.css" rel="stylesheet" />
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+	<!-- 引用插件 -->
+	<script src="../../Js/lib/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../Js/Home/iscroll.js"></script>
+	<!-- 引用自己 -->
+	<script type="text/javascript" src="../../Js/Orderform/refoundreson.js"></script>
+    
+</head>
+<body>
+	<section class="refoundreson">
+		<!-- <div class="refoundmoney">
+			<p><i>*</i>退款金额<span>（不可更改）</span></p>
+			<input type="text" class="refoundmoney" placeholder="请输入退款金额">
+		</div> -->
+		<div class="refiundreson">
+			<p><i>*</i>退款原因</p>
+			<select name="" id="reson">
+				<option value="0">预约不上</option>
+				<option value="1">商家营业但不接待</option>
+				<option value="2">用途现金/微信/支付宝支付了团购价</option>
+			</select>
+		</div>
+		<div class="otherreson">
+			<p>其他原因</p>
+			<textarea name="" id="other" cols="30" rows="8" placeholder="若有其他原因，请补充填写"></textarea>
+		</div>
+		<button class="btn">提交</button>
+	</section>
+</body>
+</html>

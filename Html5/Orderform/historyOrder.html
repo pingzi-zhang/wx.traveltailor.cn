@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1,maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="browsermode" content="application"/>
+	<meta name="imagemode" content="force">
+    <title>订单</title>
+    <!-- 引用字体库 -->
+    <link type="text/css" rel="stylesheet" href="../../fontawesome/css/font-awesome.css">
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用自己 -->
+    <link rel="stylesheet" type="text/css" href="../../Css/Orderform/historyOrder.css">
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+	<!-- 引用自己 -->
+	<script src="../../Js/Orderform/historyorder.js"></script>
+    </style>
+</head>
+		<div class="his_content">
+			<div class="nav"><span onclick="location.href='currentOrder.html'">当前订单</span><span onclick="location.href='historyOrder.html'">历史订单</span></div>
+			<div class="historybox">
+				<!-- <div class="orderbox">
+					<div class="order-title">
+						<img src="">
+						<div>
+							<p><span>陈家牛出没时尚自助烧烤餐厅&nbsp;&nbsp;></span><span>订单已完成</span></p>
+							<p>2016-11-19  19:59 </p>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="order-detail2">
+						<p><span>精致双人午餐1份</span><span>￥129.00</span></p>
+						<p><span>精致单人午餐1份</span><span>￥69.00</span></p>
+					</div>
+					<div class="line2"></div>
+					<div class="again"><a href="#">再来一单</a></div>
+				</div> -->
+			</div>
+			<div class="noorder">
+				<h4>居然没有订单</h4>
+				<p>好东西，手慢无</p>
+				<button>去逛逛</button>
+			</div>
+		</div>
+	<div class="footer" id="footer">
+		<div><a href="../Home/home.html"><i class="fa fa-home"></i><p>首页</p></a></div>
+		<div><a href="../Customized/CustomizedMessage.html"><i class="fa fa-list"></i><p>定制</p></a></div>
+		<div class="active"><a href="historyOrder.html"><i class="fa fa-shopping-cart"></i><p>订单</p></a></div>
+		<div onclick="Denglu()"><i class="fa fa-user"></i><p>我的</p></div>
+	</div>
+</body>
+</html>
+

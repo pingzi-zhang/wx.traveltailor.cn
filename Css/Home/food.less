@@ -1,0 +1,259 @@
+body{
+    background-color: #f5f5f5;
+}
+
+.foodcontent{
+    width: 100%;
+    height:100%;
+    overflow-y:auto;
+    background-color: #fff;
+    .no{
+      width:15rem;
+      height:15rem;
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-top:-12.5rem;
+      margin-left:-7.5rem;
+      display:none;
+    }
+    .fod_filter{
+        width:100%;
+        height:2.13rem;
+        display: -webkit-box;
+        display: -moz-box;
+        padding-top:0.43rem;
+        border-bottom: 1px solid #e6e6e6;
+        span{
+            display: -webkit-box;
+            border-sizing:border-box;
+            border-right:1px solid #e6e6e6;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -ms-box-flex: 1;
+            box-flex: 1;
+            height:1.72rem;
+            text-align: center;
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+            -webkit-box-orient: vertical;
+            font-size: 0.64rem;
+            .end{
+                border: none;
+            }
+        }
+    }
+    .fod_list{
+        width:100%;
+        li{
+            width:100%;
+            height:auto;
+            border-bottom: 1px solid #e6e6e6;
+//          padding-left:0.86rem;
+            .info{
+                width:96.8%;
+                padding-left:3.2%;
+                height:5.58rem;
+                padding-top:0.86rem;
+                display: -webkit-box;
+                border-bottom: 4px solid #e6e6e6;
+                .foodImg{
+                    width:4.53rem;
+                    height:4.73rem;
+                    margin-right: 0.86rem;
+//                  margin-left: 0.86rem;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .foodInfo{
+                    -webkit-box-flex: 1;
+                    height:3.73rem;
+                    p{
+                        width: 13rem;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                       line-height:1.8rem;
+                       color:#666666;
+                       &:first-child{
+                        font-size:1.15rem;
+                        color:#000;
+                       }
+                    }
+                }
+                .foodPrice{
+                    width:3.3rem;
+                    height:4.73rem;
+                    padding-right:0.9rem;
+                    line-height: 4.73rem;
+                    color:#f3992c;
+                    font-size:1.15rem;
+                    span{
+                      color:#a9a9a9;
+                      font-size:1rem;
+                    }
+                }
+            }
+            .spec{
+                width:100%;
+//              padding-left:6.44rem;
+                padding-top:0.86rem;
+                span{
+                    display: block;
+                    float:left;
+                    height:1.07rem;
+                    line-height:1.07rem;
+                    font-size: 7px;     
+                    &:nth-child(1){
+                        width:1.07rem;
+                        background-color: #63b635;
+                        color:#fff;
+                        text-align: center;
+                        border-radius: 0.1rem;
+                        margin-left:1.44rem;
+                    }
+                    &:nth-child(2){
+                        margin: 0  1.12rem 0 0.43rem;
+                        color:#666;
+                           
+                    }
+                    &:nth-child(3){
+                        width:1.07rem;
+                        border-radius: 0.1rem;
+                        background-color: #ff7239;
+                        color: #fff;
+                        text-align: center;
+                        margin-right:0.43rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*遮罩*/
+.mask-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 5.5rem;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/*排序*/
+.foo {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  z-index:2;
+}
+.foo ul li {
+  height: 4rem;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  line-height: 4rem;
+  padding-left: 3.55rem;
+  position: relative; 
+}
+.foo ul li label {
+  width: 1.55rem;
+  height: 1.55rem;
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  margin-top: -.85rem;
+  z-index: 1; 
+  
+}
+.whole ul li:first-child label{
+    background: url("../../Images/Home/foodbuxian.png") no-repeat center center;
+    background-size: cover;
+  }
+.whole ul li:nth-of-type(2) label{
+    background: url("../../Images/Home/foodzhuocan.png") no-repeat center center;
+    background-size: cover;
+  }
+.whole ul li:nth-of-type(3) label{
+    background: url("../../Images/Home/foodzihzu.png") no-repeat center center;
+    background-size: cover;
+}
+.order ul li:first-child label{
+    background: url("../../Images/Home/foodlaba.png") no-repeat center center;
+    background-size: cover;
+  }
+.order ul li:nth-of-type(2) label{
+    background: url("../../Images/Home/fooddingwei.png") no-repeat center center;
+    background-size: cover;
+  }
+.order ul li:nth-of-type(3) label{
+    background: url("../../Images/Home/foodjiantou.png") no-repeat center center;
+    background-size: cover;
+}
+.order ul li:last-child label{
+    background: url("../../Images/Home/foodxiajiantou.png") no-repeat center center;
+    background-size: cover;
+}
+
+.foo ul li input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px;
+  z-index: 2;
+  opacity: 0; 
+}
+.screen{
+  background:#fff;
+}
+.screen h4{
+    height:2.5rem;
+    line-height:2.5rem; 
+    text-indent:1rem;
+    font-size:.954rem;
+}
+
+.screen p{
+    display:block;
+    width:5.7rem;
+    height:2.13rem;  
+    float:left;
+    border:1px solid #cccccc;
+    margin-left:.65rem;
+    margin-bottom:.5rem;
+    line-height:2.13rem;
+    text-align:center;  
+    border-radius:3px;
+}
+.screen .foodbtn{
+  width:100%;
+  position:absolute;
+  bottom:0;
+  border-top:1px solid #ccc;
+}
+.screen .foodbtn button{
+    width:50%;
+    height:2.5rem;
+    float:left;
+    border:none;
+    background:#fff;
+    outline:none;
+}
+.screen .foodbtn .foodconfirm{
+  background:#f3992c;
+  color:#fff;
+}
+.screen .foodcheckcolor{
+    background:#fef5e9;
+    border:1px solid #f3992c;
+    color:#f3992c;
+}

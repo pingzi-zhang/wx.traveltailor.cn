@@ -1,0 +1,135 @@
+.login{
+	background: #f5f5f5;
+    overflow:hidden;
+}
+.updatemine{
+	width:100%;
+	position: absolute;
+}
+.updatemine p{
+	width: 24rem;
+	height: 3.2rem;
+	margin-left: 1rem;
+	line-height: 3.2rem;
+	background: #fff;
+	margin-top: 1rem;
+	border-radius: 0.215rem;
+	padding: 0 0.3rem;
+}
+.updatemine p span{
+	margin-left: 1rem;
+	float:left;
+	width: 22%;
+	text-align: center;
+	color:#999999;
+} 
+.updatemine p input{
+	height: 100%;
+	width: 60%;
+	margin-left: 2rem;
+	text-align: left !important;
+	border:none;
+	text-align:right;
+	padding-right: 1rem;
+	outline: none;
+	color: #4d4d4d;
+}
+section .save{
+	display: inline-block;
+	background-color: #f3992c;
+	color: #FFFFFF;
+	width: 24rem;
+	height: 3rem;
+	border-radius: 7px;
+	text-align: center;
+	line-height: 3rem;
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+/* 日期插件 */
+.mt_body li.selected {
+    color: #f49a2c !important;
+}
+.mt_panel h3 {
+    color: #f49a2c !important;
+}
+.mt_ok, .mt_cancel, .mt_setnow {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    width: 33.33%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #f49a2c !important;
+    color: #f49a2c !important;
+    box-sizing: border-box;
+    border-bottom: none;
+    border-right: none;
+}
+.message ul .adultgrown{
+    display: none;
+    width: 20%;
+    position: absolute;
+    background: #fff;
+    top: 16rem;
+    right: 4rem;
+    border: 1px solid #b1b3b5;
+    z-index: 9;
+    height: 97px;
+    overflow: scroll;
+}
+
+/* 下拉选择slide-selictor */
+.show{
+    display: block !important;
+}
+.mask-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    display: none;
+    z-index: 6;
+}
+.slide-selector{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 270px;
+    overflow: auto;
+    background: #fff;
+    transform: translate3d(0,100%,0);
+    transition: transform .3s linear;
+    z-index: 7;
+}
+.slide-active{
+    transform: translate3d(0,0,0);
+}
+.slide-header{
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    position: relative;
+    background: #f49a2c;
+    color:#fff;
+}
+.slide-cancel{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    margin:5px;
+    border: 1px solid #eee;
+    font-size: .8rem;
+    line-height: 1;
+    color: #fff;
+}
+.slide-option{
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 3.4;
+    text-align: center;
+    color: #ff9500;
+    font-size:.86rem;
+}

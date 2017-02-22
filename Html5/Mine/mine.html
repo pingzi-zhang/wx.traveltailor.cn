@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的</title>
+    <!-- 引用animate动画库 -->
+    <link type="text/css" href="../../Css/lib/animate.min.css" rel="stylesheet"/>
+    <!-- 引用字体库 -->
+    <link type="text/css" rel="stylesheet" href="../../fontawesome/css/font-awesome.css">
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用自己 -->
+    <link type="text/css" href="../../Css/Mine/mine.css" rel="stylesheet" />
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+	<!-- 引用自己 -->
+	<script type="text/javascript" src="../../Js/Mine/mine.js"></script>
+</head>
+<body>
+	<section>
+		<div class="minetitle">
+			<!-- <a href="mineEditprofile.html">
+			<dl>
+				<dt><img src=""></dt>
+				<dd>
+					<h3>赖伟轩</h3>
+					<p><i class="fa fa-mobile-phone fa-2x"></i>180****0451</p>
+				</dd>
+			</dl>
+			
+			</a> -->
+			<!-- <div class="sanjiao"></div> -->  
+		</div>
+		<div class="mineding">
+			<ul>
+				<li class="minecustom"><a href="#">我的定制</a></li>
+
+				<li class="mineabout" id="aboutOut"><a href="javascrip:void(0)">关于我们</a></li>
+				<li class="mineabout" id="contactUs"><a href="javascrip:void(0)">联系我们</a></li>
+				<li id="changeuser" class="mineabout"><a href="javascrip:void(0)">更改账户</a></li>
+			</ul>
+		</div>
+		<div class="box" id="steward">
+			<h3>管家功能</h3>
+			<div class="minezai">
+				<ul>
+					<li class="state">
+						<a href="#">在线状态</a><div class="slide on"></div>
+					</li>
+					<li  id="order"><a href="#" class="order">我的订单</a></li>
+					<!--<li  id="scanCode"><a href="#" class="code">使用扫码</a><span class="erweima"><img src="../../Images/Mine/erweima.png" alt=""></span></li>-->
+					<li id="backCode"><a href="#"  class="code">退单扫码</a><span class="erweima"><img src="../../Images/Mine/erweima.png" alt=""></span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="box" id="merchant">
+			<h3>商家功能</h3>
+			<div class="minezai">
+				<ul>
+					<li id="consumeScanCode"><a href="#"  class="code">消费扫码</a><span class="erweima"><img src="../../Images/Mine/erweima.png" alt=""></span></li>
+					<!--<li><a href="#"  class="code">退单扫码</a><span class="erweima"><img src="../../Images/Mine/erweima.png" alt=""></span></li>-->
+				</ul>
+			</div>
+		</div>
+		<!--<div id="changeuser" class="changeuser">更换账户</div>-->
+	</section>
+	<div class="footer" id="footer">
+		<div><a href="../Home/home.html"><i class="fa fa-home"></i><p>首页</p></a></div>
+		<div><a href="../Customized/CustomizedMessage.html"><i class="fa fa-list"></i><p>定制</p></a></div>
+		<div class="orderform"><a href="../Orderform/currentOrder.html"><i class="fa fa-shopping-cart"></i><p>订单</p></a></div>
+		<div class="active" onclick="Denglu()"><i class="fa fa-user"></i><p>我的</p></div>
+	</div>
+</body>
+</html>
+
+

@@ -1,0 +1,136 @@
+section .selling h1 {
+  width: 100%;
+  height: 3.58rem;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  line-height: 3.67rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+section .selling li {
+  margin: 0 auto;
+  margin-top: 0.86rem;
+  width: 96%;
+  height: 17rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem #f7f7f7;
+  border-radius: 0.17rem;
+  position: relative;
+}
+section .selling li img {
+  display: block;
+  width: 100%;
+  height: 12.92rem;
+  margin-bottom: .5rem;
+}
+section .selling li .door_tit {
+  position: absolute;
+  top: 11rem;
+  color: #f5f5f5 !important;
+  width: 100%;
+  background: url(../../Images/Home/bg.png) no-repeat 100% 100%;
+}
+section .selling li p {
+  text-indent: 1rem;
+  width: 20rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.8rem;
+}
+section .selling li p:nth-child(2) {
+  color: #4d4d4d;
+}
+section .selling li p:nth-child(3) {
+  color: #a0a0a0;
+}
+section .selling li .mnp {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0.86rem;
+  width: 2.58rem;
+  height: 1.29rem;
+  background-color: #da9328;
+  line-height: 1.29rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.86rem;
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+section .selling li .hdi {
+  display: block;
+  width: 3.22rem;
+  height: 3.22rem;
+  border-radius: 3.22rem;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 11.28rem;
+  right: 0.84rem;
+  border-radius: 50%;
+  /*background:url(../../Images/Home/headimg.jpg) center no-repeat;*/
+}
+section .selling li .hdi img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+section .selling li .hdn {
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+  position: absolute;
+  top: 15.23rem;
+  right: 1.22rem;
+  color: #999;
+}
+#pullDown .pullDownIcon,
+#pullUp .pullUpIcon {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: url(../../Images/Home/pull-icon@2x.png) no-repeat;
+  background-size: 40px 80px;
+  -webkit-background-size: 40px 80px;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 250ms;
+  margin-left: 9rem;
+}
+.clear {
+  clear: both;
+}
+#pullDown .pullDownIcon {
+  -webkit-transform: rotate(0deg) translateZ(0);
+}
+#pullDown.flip .pullDownIcon {
+  -webkit-transform: rotate(180deg) translateZ(0);
+}
+#pullUp .pullUp {
+  -webkit-transform: rotate(-180deg) translateZ(0);
+}
+#pullUp.flip .pullUpIcon {
+  -webkit-transform: rotate(180deg) translateZ(0);
+}
+#pullDown {
+  height: 2.8rem;
+  line-height: 2.88rem;
+  margin-top: 2.6rem;
+}
+#pullUp {
+  height: 2.8rem;
+  line-height: 2.88rem;
+}
+#pullDown.loading .pullDownIcon,
+#pullUp.loading .pullUpIcon {
+  background-position: 0  100%;
+  -webkit-animation: loading 1s linear infinite;
+}
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

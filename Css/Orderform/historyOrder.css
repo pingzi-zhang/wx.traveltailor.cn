@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #F5F5F5;
+}
+.his_content{
+	width: 100%;
+	height: 100%;
+}
+.historybox{
+	margin-bottom:4rem;
+}
+.nav{
+	height: 2.577rem;
+	line-height: 2.577rem;
+	background-color: #fff;
+}
+.nav span{
+	display: inline-block;
+	height: 1.718rem;
+	width:50%;
+	line-height: 1.718rem;
+	text-align: center;
+	font-size: 0.751rem;
+}
+.nav span:last-child{
+	color: #f3992b;
+	border-left: 1px solid #E5E5E5;
+}
+.order-title{
+	height: 3.865rem;
+	margin-top: 0.59rem;
+	background-color: #fff;
+	padding: 0.859rem;
+}
+.order-title img{
+	width: 2.157rem;
+	height: 2.157rem;
+	float: left;
+	margin-right: 0.859rem;
+}
+.order-title div{
+	/* width: 22.057rem; */
+	height: 2.225rem;
+	padding-left: 3.016rem;
+	/* float: right; */
+}
+.order-title div p:first-child{
+	margin-bottom: 0.644rem;
+	height: 0.945rem;
+}
+.order-title div p:last-child{
+	font-size: 0.665rem;
+	color: #666666;
+}
+.order-title div span:first-child{
+	float: left;
+	font-size: 0.945rem;
+	/* font-weight: bold; */
+}
+.order-title div span:last-child{
+	float: right;
+	font-size: 0.751rem;
+	color: #999999;
+}
+.line{
+	height: 1px;
+	background-color: #fff;
+	width: 3.801rem;
+}
+.line2{
+	height: 1px;
+	background-color: #fff;
+	width: 0.859rem;
+}
+.order-detail2{
+	height:auto;
+	background-color: #fff;
+	padding-left: 3.801rem;
+	padding-right: 0.794rem;
+	padding-top: 1.224rem;
+	padding-bottom: 0.579rem;
+	color: #666666;
+}
+.order-detail2 p{
+	width: 22.057rem;
+	font-size: 0.751rem;
+}
+.order-detail2 p:first-child{
+	margin-bottom: 1.417rem;
+	/* font-weight: bold; */
+}
+.order-detail2 p span:first-child{
+	float: left;
+}
+.order-detail2 p span:last-child{
+	float: right;
+}
+.again{
+	height: 3.221rem;
+	background-color: #fff;
+	padding-top: 0.644rem;
+	padding-right: 0.859rem;
+	padding-bottom: 0.731rem;
+}
+.again a{
+	display: inline-block;
+	float: right;
+	width: 4.295rem;
+	height: 1.932rem;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 1.932rem;
+	/* background-color: #F3992B; */
+	border: 1px solid #f3992b;
+	color: #f3992b;
+	font-size: 0.751rem;
+}
+.noorder{
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+.noorder h4{
+	margin-top:3.5rem;
+	font-size:1.2srem;
+}
+.noorder p{
+	line-height: 3rem;
+	color:#cec6c6;
+	font-size:.75rem;
+}
+.noorder button{
+	width: 5.3rem;
+	height:2.1rem;
+	text-align: center;
+	color:#f49a2c;
+	background: transparent;
+	border:1px solid #f49a2c;
+	border-radius: 5px;
+	outline:none;
+}

@@ -1,0 +1,39 @@
+dl{
+	margin-top: 7rem;
+	width: 100%;
+}
+dl dt{
+	width: 6.5rem;
+	height: 6.5rem;
+	margin: 0 auto;
+	border-radius: 1rem;
+}
+dl dt img{
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+}
+dl dd{
+	text-align: center;
+	margin-top: 1rem;
+}
+.login{
+	color: #999999;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+footer{
+	position: absolute;
+	top: 73%;
+	width: 100%;
+}
+footer p{
+	text-align: center;
+	line-height: 2rem;
+	width: 100%;
+}
+footer p:last-of-type{
+	font-size: .9rem;
+	
+}

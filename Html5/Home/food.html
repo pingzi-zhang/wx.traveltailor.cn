@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1,maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="browsermode" content="application"/>
+	<meta name="imagemode" content="force">
+    <title>美食</title>
+    <!-- 引用animate动画库 -->
+    <link type="text/css" href="../../Css/lib/animate.min.css" rel="stylesheet"/>
+    <!-- 引用字体库 -->
+    <link type="text/css" rel="stylesheet" href="../../fontawesome/css/font-awesome.css">
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用自己 -->
+    <link type="text/css" href="../../Css/Home/food.css" rel="stylesheet" />
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+	<!-- 引用插件 -->
+	<script src="../../Js/lib/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../Js/Home/iscroll.js"></script>
+	<!-- 引用自己 -->
+	<script type="text/javascript" src="../../Js/Home/food.js"></script>
+    
+</head>
+<body>
+	<section class="foodcontent">
+		<!-- <img src="../../Images/Home/no.png" alt="" class="no"> -->
+		<div  class="loadbox" style="display: block">
+			<div class="loading">
+				<i class="icono-gear spin"></i>正在加载中……
+			</div>
+		</div>
+	<!-- <div class="fod_filter">
+		<span>全部 ▼</span>
+		<span>筛选 ▼</span>
+		<span class="end">排序 ▼</span>
+		<div class="whole foo">
+			<ul>
+				<li data-tit="4"><input type="radio" id="1" name="b"><label for="1"></label>不限</li>
+				<li data-tit="1"><input type="radio" id="b" name="b"><label for="b"></label>桌餐</li>
+				<li data-tit="2"><input type="radio" id="c" name="b"><label for="c"></label>自助餐</li>
+			</ul>
+		</div>	
+		<div class="screen foo">
+			<div class="eatnum1">
+				<h4>用餐人数</h4>
+				<p stars="4" class="limit1 foodcheckcolor">不限</span></p>
+				<p stars="单人餐">单人餐</p>
+				<p stars="双人餐">双人餐</p>
+				<p stars="3-4人餐">3-4人餐</p>
+				<p stars="5-10人餐">5-10人餐</p>
+				<p stars="10人以上">10人以上</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="eatnum2">
+				<h4>用餐人数</h4>
+				<p stars="4" class="limit2 foodcheckcolor">不限</p>
+				<p stars="0">早餐</p>
+				<p stars="1">午餐</p>
+				<p stars="2">晚餐</p>
+				<p stars="3">夜宵</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="foodbtn">
+				<button class="foodreset">重置</button>
+				<button class="foodconfirm">确定</button>
+			</div>
+		</div>
+		<div class="order foo">
+			<ul>
+				<li><input type="radio" id="3" name="W" data-tit='1'><label for="3"></label>最新上线</li>
+				<li><input type="radio" id="h" name="W" data-tit='2'><label for="h"></label>离我最近</li>
+				<li><input type="radio" id="i" name="W" data-tit='3'><label for="i"></label>价格最低</li>
+				<li><input type="radio" id="g" name="W" data-tit='4'><label for="g"></label>价格最高</li>
+			</ul>
+		</div>
+				
+	
+	</div> -->
+	
+	<div class="fod_list">
+		<!-- <li onclick="location.href='foodDetail.html'">
+			<div class="info">
+				<div class="foodImg">
+					<img src="../../Images/Home/food1.jpg" >
+				</div>
+				<div class="foodInfo">
+					<p>四海一家（人民南路二段街）</p>
+					<p>自助餐</p>
+					<p>仁恒置地53.1km</p>
+				</div>
+				<div class="foodPrice">
+					￥198/人
+				</div>
+			</div>
+			<div class="spec">
+				<span>退</span>
+				<span>随时退</span>
+				<span>团</span>
+				<span>4-5人餐</span>
+			</div>
+		</li>
+		<li onclick="location.href='foodDetail.html'">
+			<div class="info">
+				<div class="foodImg">
+					<img src="../../Images/Home/food1.jpg" >
+				</div>
+				<div class="foodInfo">
+					<p>四海一家（人民南路二段街）</p>
+					<p>自助餐</p>
+					<p>仁恒置地53.1km</p>
+				</div>
+				<div class="foodPrice">
+					￥198/人
+				</div>
+			</div>
+			<div class="spec">
+				<span>退</span>
+				<span>随时退</span>
+				<span>团</span>
+				<span>4-5人餐</span>
+			</div>
+		</li> -->
+	</div>
+	</section>
+	
+</body>
+</html>
+
+<script type="text/javascript"></script>
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"		
+	});
+</script>

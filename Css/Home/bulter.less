@@ -1,0 +1,190 @@
+section{
+    /*padding-bottom: 4.24rem;
+    ovewrflow-y:auto;
+    position:relative;*/
+    width:100%;
+    height:100%;
+    .no{
+      width:15rem;
+      height:15rem;
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-top:-12.5rem;
+      margin-left:-7.5rem;
+    }
+    .bult_filter{
+        position:fixed;
+        top:0;
+        z-index:2;
+        width:100%;
+        height:2.13rem;
+        display: -webkit-box;
+        display: -moz-box;
+        padding-top:0.43rem;
+        border-bottom: 1px solid #e6e6e6;
+        background:#fff;
+        span{
+            display: -webkit-box;
+            border-sizing:border-box;
+            border-right:1px solid #e6e6e6;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -ms-box-flex: 1;
+            box-flex: 1;
+            height:1.72rem;
+            text-align: center;
+            -webkit-box-pack: center;
+            -webkit-box-align: center;
+            -webkit-box-orient: vertical;
+            font-size: 0.64rem;
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+    .selling{
+        /*margin-top:3.13rem;*/
+        h1{
+            width: 100%;
+            height:3.58rem;
+            font-size: 1rem;
+            color:#666;
+            text-align: center;
+            line-height: 3.67rem;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        li{
+            margin:0 auto;
+            margin-top:0.86rem;
+            width:96%;
+            height:auto;
+            padding-bottom:1rem;
+            box-shadow: 0.25rem 0.25rem 0.25rem #f7f7f7;
+            border-radius: 0.17rem;
+            img{
+                width:100%;
+                height:12.92rem;
+            }
+            p{  
+                margin-top: 0.86rem;
+                margin-left:.8rem;
+                &:nth-child(2){
+                    
+                    color:#4d4d4d;
+                }
+                &:nth-child(3){
+                    color:#a0a0a0;
+                }
+            }
+        }
+    }
+}
+
+/*遮罩*/
+.mask-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+  z-index: 1;
+}
+
+/*排序*/
+.foo {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top:2.6rem;
+  z-index:2;
+  overflow:auto;
+}
+.foo ul li {
+  height: 4rem;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+  line-height: 4rem;
+  padding-left: 1rem;
+  position: relative; 
+}
+.foo ul li label {
+  width: 1.55rem;
+  height: 1.95rem; 
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -1rem;
+  z-index: 1; 
+}
+/*.city ul li:first-child label{
+   background: url("../../Images/Home/citydingwei.png") no-repeat center center;
+    background-size: cover;
+}*/
+.foo ul li input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px;
+  z-index: 2;
+  opacity: 0; 
+}
+
+#pullDown .pullDownIcon,#pullUp .pullUpIcon{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(../../Images/Home/pull-icon@2x.png) no-repeat;
+    background-size: 40px 80px;
+    -webkit-background-size:40px 80px;
+    -webkit-transition-property:-webkit-transform;
+    -webkit-transition-duration:250ms;
+    margin-left:9rem;
+}
+.clear{
+    clear:both;
+}
+#pullDown .pullDownIcon{
+    -webkit-transform:rotate(0deg) translateZ(0);
+    
+}
+#pullDown.flip .pullDownIcon{
+    -webkit-transform:rotate(180deg) translateZ(0);
+}
+#pullUp .pullUp{
+    -webkit-transform:rotate(-180deg) translateZ(0);
+}
+#pullUp.flip .pullUpIcon{
+    -webkit-transform:rotate(180deg) translateZ(0);
+}
+
+#pullDown{
+    height: 2.8rem;
+    line-height: 2.88rem;
+    margin-top:2.6rem
+}
+#pullUp{
+    height: 2.8rem;
+    line-height: 2.88rem;
+}
+#pullDown.loading1 .pullDownIcon,
+    #pullUp.loading1 .pullUpIcon {
+        background-position: 0  100%;
+        
+        -webkit-animation:loading1 1s linear infinite;
+    }
+
+@keyframes loading1{
+    from{
+        -webkit-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>订单填写</title>
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../Css/public.css" rel="stylesheet"/>
+    <!-- 引用日期插件样式 -->
+    <link href="../Css/lib/normalize3.0.2.min.css" rel="stylesheet" />
+    <link href="../Css/lib/mobiscroll_date.css" rel="stylesheet" />
+    <link href="../Css/lib/mobiscroll.css" rel="stylesheet" />
+    <link href="../Css/lib/LArea.css" rel="stylesheet" />
+    <!-- 引用自己 -->
+    <link rel="stylesheet" type="text/css" href="../Css/Orderform/orderWrite.css">
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用微信接口 -->
+    <!-- <script type="text/javascript" src="../../Js/lib/jweixin-1.0.0.js"></script> -->
+    <script type="text/javascript" src="../Scripts/jweixin-1.0.0.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../Scripts/Global.js"></script>
+    <!-- 引用插件 -->
+    <script type="text/javascript" src="../Js/lib/mobiscroll_date.js"  charset="gb2312"></script>
+    <script type="text/javascript" src="../Js/lib/mobiscroll.js"></script> 
+
+    <script src="../Js/lib/LAreaData1.js"></script>
+    <script src="../Js/lib/LAreaData2.js"></script>
+    <script type="text/javascript" src="../Js/lib/LArea.js"></script> 
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../Js/common.js"></script>
+    <!-- 引用自己 -->
+    <script type="text/javascript" src="../Js/MinShenwx.js"></script>
+
+</head>
+<body id="#vuebody">
+<div >
+    <div  class="loadbox" style="display: block">
+        <div class="loading">
+            <i class="icono-gear spin"></i>正在加载中……
+        </div>
+    </div>
+	<div class="C_content2">
+        
+        <ul class="shops">
+            <li>
+                <img src="">
+                <div class="shops-detail">
+                    <p>陈家牛出没时尚自助烧烤餐厅</p>
+                    <p>自助餐</p>
+                    <p><span>￥50/</span>人</p>
+                </div>
+                <div class="order_num">
+                    <span>2</span>
+                </div>
+            </li>
+            <li>
+                <img src="">
+                <div class="shops-detail">
+                    <p>四海一家（人民南路二段店）</p>
+                    <p>自助餐</p>
+                    <p><span>￥69/</span>人</p>
+                </div>
+                <div class="order_num">
+                    <span>1</span>
+                </div>
+            </li>
+        </ul>
+    
+        <ul class="message">
+            <li><span>联系人：</span><input type="text"  placeholder="请填写联系人姓名" class="contacts"></li>
+            <li><span>手机号码：</span><input type="text" placeholder="请填写手机号码" class="conmobile"></li>
+            <!-- <li class="Verification"><input type="text" class="codenum" placeholder="请输入短信验证码"><input type="button" value="点击发送" class="daojishi" name=""></li> -->
+            <li class="Receipt_address"><span>收货地址：</span><input id="demo1" type="text" readonly="" placeholder="请选择城市"  value="广东省,深圳市,南山区"/><input id="value1" type="hidden" value="20,234,504"/></li>
+            <li class="detailed_address"><span>详细地址：</span><input type="text" value="" class="detailad"></li>
+            
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="content">
+            <p>应付：￥<span class="payprice">0</span></p>
+            <!-- <p>合计：￥<span class="payprice">0</span>&nbsp;&nbsp;优惠：￥0.00</p> -->
+        </div>
+        <!--<a href="#" id="pay_immediately">立即支付</a>-->
+        <button id="pay_immediately">立即支付</button>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+   
+
+</script>
+</html>

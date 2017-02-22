@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1,maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="browsermode" content="application"/>
+	<meta name="imagemode" content="force">
+    <title>门票</title>
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用自己 -->
+    <link type="text/css" href="../../Css/Home/doorticket.css" rel="stylesheet" />
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+    <!-- 引用插件 -->
+	<script type="text/javascript" src="../../Js/Home/iscroll.js"></script>
+	<!-- 引用自己 -->
+	<script type="text/javascript" src="../../Js/Home/doortucket.js"></script>
+    
+</head>
+<body>
+<div class="door_wrapper">
+	<div  class="loadbox" style="display: block;">
+		<div class="loading">
+			<i class="icono-gear spin"></i>正在加载中……
+		</div>
+	</div>
+	<!-- <header><a href="home.html"></a>门票</header> -->
+	<section id="orderiscroll">
+		<div id="wrapper">
+			<!-- <div id="pullDown">
+					        <span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新……</span>
+					    </div> -->
+			<div class="selling">
+				<li onclick="location.href='bulterHome.html'">
+					<img src="../../Images/Home/newbutler.jpg" >
+					<p class="door_tit">骨灰级美食顾问给你一场舌尖上的幸福</p>
+					<p>骨灰级美食顾问给你一场舌尖上的幸福</p>
+					<p>紫雨/成都·25岁·女·当地达人</p>
+					<span class="mnp">￥25</span>
+					<span class="hdi"></span>
+					<span class="hdn">码语者</span>
+				</li>
+				<li onclick="location.href='bulterHome.html'">
+					<img src="../../Images/Home/newblter2.jpg" >
+					<p class="door_tit">骨灰级美食顾问给你一场舌尖上的幸福</p>
+					<p>骨灰级美食顾问给你一场舌尖上的幸福</p>
+					<p>码语者/成都·25岁·女·当地达人</p>
+					<span class="mnp">￥25</span>
+					<span class="hdi"></span>
+					<span class="hdn">码语者</span>
+				</li>
+			</div>
+			<!-- <div id="pullUp">
+				<span class="pullUpIcon"></span>
+				<span class="pullUpLabel">Pull up to refresh...</span>
+			</div> -->
+		</div>
+	</section>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"		
+	});
+</script>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="browsermode" content="application"/>
+    <meta name="imagemode" content="force">
+    <title>定制旅游</title>
+    <!-- 引用animate动画库 -->
+    <link type="text/css" href="../../Css/lib/animate.min.css" rel="stylesheet"/>
+    <!-- 引用字体库 -->
+    <link type="text/css" rel="stylesheet" href="../../fontawesome/css/font-awesome.css">
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用自己 -->
+    <link href="../../Css/Customized/CustomizedMessage.css" rel="stylesheet" />
+    <!-- 引用日期插件样式 -->
+    <link href="../../Css/lib/normalize3.0.2.min.css" rel="stylesheet" />
+    <link href="../../Css/lib/mobiscroll_date.css" rel="stylesheet" />
+    <link href="../../Css/lib/mobiscroll.css" rel="stylesheet" />
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+    <!-- 引用插件 -->
+    <script type="text/javascript" src="../../Js/lib/mobiscroll_date.js"  charset="gb2312"></script>
+    <script type="text/javascript" src="../../Js/lib/mobiscroll.js"></script> 
+    <!-- 引用自己 -->
+    <script type="text/javascript" src="../../Js/Customized/CustomizedMessage.js" ></script>
+</head>
+<body>
+<div class="C_content2">
+    <div class="firstStep">
+        <!-- <div class="bg"></div> -->
+        <div class="tit-select">
+            <div class="tit">
+                <h4>旅游主题</h4><span class="tip"> (可多选)</span>
+                <input type="hidden" value="" id="theme" name="theme" />
+            </div>
+            <div class="link"></div>
+            <ul class="tourism">
+                <li class="themeItem" ThemeID='5d20085519e341829c7d2ad7f86c762b'>深度观光</li>
+                <li class="themeItem" ThemeID='af2d95f97ecb4cb6ae365749b85a0035'>古堡建筑</li>
+                <li class="themeItem" ThemeID='717df5f9c6be4a6493580184cff8d0e9'>时尚购物</li>
+                <li class="themeItem" ThemeID='ab9384aaa3224c4685d1703ec2fe70a0'>艺术人文</li>
+                <li class="themeItem" ThemeID='5586ef5eab34465ea10fe00d86349527'>自驾遨游</li>
+                <li class="themeItem" ThemeID='94269f62ef034c0f9b6ac653648a9132'>美食美酒</li>
+            </ul>
+        </div>
+        <div class="bg"></div>
+        <!-- <div class="hotel">
+            <h4>酒店星级</h4>
+            <img src="" alt=""/>
+        </div> -->
+        <div class="hotel middleBox" style="background-color:#fff;">
+                <div class="weui_cell weui_select_before">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">酒店星级</label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary" style="text-align:left;">
+                        <ul>
+                            <li class="imgbox"><img src="../../Images/Customized/lightStar.jpg" /></li>
+                            <li class="imgbox">
+                                <img src="../../Images/Customized/lightStar.jpg" />
+                               <!--  <input type="checkbox" class="starCheck" name="starCheck" value=""  style="position:absolute;left:0;top:0;width:15px;height:15px;opacity:0;" /> -->
+                            </li>
+                            <li class="imgbox">
+                                <img src="../../Images/Customized/lightStar.jpg" />
+                                <!-- <input type="checkbox" class="starCheck" name="starCheck" value=""  style="position:absolute;left:0;top:0;width:15px;height:15px;opacity:0;" /> -->
+                            </li>
+                            <li class="imgbox">
+                            <img src="../../Images/Customized/grayStar.jpg" />
+                                <input type="checkbox" class="starCheck" name="starCheck" value=""  style="position:absolute;left:.3rem;top:1.2rem;width:15px;height:15px;opacity:0;" />
+                            </li>
+                            <li class="imgbox">
+                            <img src="../../Images/Customized/grayStar.jpg" />
+                                <input type="checkbox" class="starCheck" name="starCheck" value="" style="position:absolute;left:.3rem;top:1.2rem;width:15px;height:15px;opacity:0;" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="hidden" id="star" name="star" value="3" style="width: 0" />
+            </div>
+
+        <div class="bg"></div>
+        <div class="message">
+            <div class="tit">
+                <h4>基本信息</h4>
+            </div>
+            <ul>
+                <!-- <li><span class="fl">出发城市</span><span class="fr"><a href="customizedcity.html">成都</a></span></li> -->
+                <li><span class="fl">出发城市</span><span class="fr"><input type="text" id="set" placeholder="请输入出发城市"></span></li>
+                <li><span class="fl">目的地</span><input type="text" dir="rtl" value="" id="destination" placeholder="请输入目的地"/></li>
+                <!-- <li><span class="fl">出行时间</span><span class="fr" id="data">选择最早 / 最晚出发时间 </span></li> -->
+                <li class="arrow"><span class="fl">出行时间</span><input type="text" name="USER_AGE" id="USER_AGE" readonly class="input" placeholder="请填写你的出游日期" /></li>
+                <li class="arrow"><span class="fl">出行人数</span><span class="fr"><span id="adultgrown">成人</span><span class="adultgrownnum">1</span>　|　<span id="children">儿童</span><span class="childrennum">0</span></span></li>
+                <div class="adultgrown">
+                    <li value="1">1</li>
+                    <li value="2">2</li>
+                    <li value="3">3</li>
+                    <li value="4">4</li>
+                    <li value="5">5</li>
+                    <li value="6">6</li>
+                    <li value="7">7</li>
+                    <li value="8">8</li>
+                    <li value="9">9</li>
+                    <li value="10">10</li>
+                    <li value="11">11</li>
+                    <li value="12">12</li>
+                    <li value="13">13</li>
+                    <li value="14">14</li>
+                    <li value="15">15</li>
+                    <li value="16">16</li>
+                </div>
+                <div class="children">
+                    <li value="0">0</li>
+                    <li value="1">1</li>
+                    <li value="2">2</li>
+                    <li value="3">3</li>
+                    <li value="4">4</li>
+                    <li value="5">5</li>
+                    <li value="6">6</li>
+                    <li value="7">7</li>
+                    <li value="8">8</li>
+                    <li value="9">9</li>
+                    <li value="10">10</li>
+                    <li value="11">11</li>
+                    <li value="12">12</li>
+                    <li value="13">13</li>
+                    <li value="14">14</li>
+                    <li value="15">15</li>
+                    <li value="16">16</li>
+                </div>
+                <li><span class="fl">出行天数</span><input type="text" id="Travel" placeholder="0" class="num"/><span class="fr">天</span></li>
+                <li><span class="fl">人均预算</span><input type="text" id="budget" placeholder="0" class="num"/><span class="fr">元</span></li>
+            </ul>
+        </div>
+        <div class="btn"><a href="#">下一步</a></div>
+    </div>
+
+    <div class="secondStep">
+        <div class="bg"></div>
+        <div class="main-message">
+            <ul>
+                <li><span>联系人</span><input type="text" id="user" placeholder="怎么称呼您？"/></li>
+                <li><span>手机号码</span><input type="text" id="mobilenum" placeholder="请输入手机号码"/></li>
+                <li class="Verification"><input type="text" class="codenum" placeholder="请输入短信验证码"><input type="button" value="点击发送" class="daojishi" name=""></li>
+                <li><span>联系邮箱</span><input type="email" id="callemial" placeholder="请输入手机邮箱"/></li>
+                <!-- <li class="last"><span>其他需求</span><input type="text" placeholder="您还有其他需求，请填写在这里，选填"/></li> -->
+            </ul>
+
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <textarea id="demand" class="weui_textarea" placeholder="选填，如果有其他需求，可以在此填写" rows="5"></textarea>
+                        <div class="weui_textarea_counter"><span class="inputword">0</span>/500</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="submit"><a href="#">提交</a></div><!-- CustomizedList.html -->
+    </div>
+</div>
+<div class="footer" id="footer">
+    <div><a href="../Home/home.html"><i class="fa fa-home"></i><p>首页</p></a></div>
+    <div class="active"><a href="CustomizedMessage.html"><i class="fa fa-list"></i><p>定制</p></a></div>
+    <div><a href="../Orderform/currentOrder.html"><i class="fa fa-shopping-cart"></i><p>订单</p></a></div> <!-- class="orderform" -->
+    <div onclick="Denglu()"><i class="fa fa-user"></i><p>我的</p></div>
+</div>
+</body>
+</html>
+

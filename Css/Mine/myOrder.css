@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #F5F5F5;
+	font-size: 1rem;
+}
+
+.noorder{
+	margin-top: 6rem;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+.noorder h4{
+	margin-top:3.5rem;
+	font-size:1.2srem;
+}
+.noorder p{
+	line-height: 3rem;
+	color:#cec6c6;
+	font-size:.75rem;
+}
+.noorder button{
+	width: 5.3rem;
+	height:2.1rem;
+	text-align: center;
+	color:#f49a2c;
+	background: transparent;
+	border:1px solid #f49a2c;
+	border-radius: 5px;
+	outline:none;
+}
+.C_content .load{
+	margin-left: 2rem;
+	display: none;
+}
+.tab{
+	height: 3.57rem;
+	background-color: #FFFFFF;
+	display: -webkit-flex;
+	padding: 0.5rem 0;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #F5F5F5;
+}
+.bottip{
+	display: none;
+	text-align: center;
+	height: 2rem;
+	line-height: 2rem;
+}
+.tab a{
+	float: left;
+	display: inline-block;
+	text-align: center;
+	line-height:  2.57rem;
+	width: 50%;
+	/*flex: 1;*/
+}
+.tab a:nth-of-type(1){
+	border-right: 1px solid #F5F5F5;
+}
+.C_content .list{
+	margin-top: 4.4rem;
+}
+.C_content .tab a:nth-of-type(1){
+	border-right: 1px solid #e6e6e6;
+}
+.on{
+	color: #f3992c;
+}
+.box{
+	background-color: #FFFFFF;
+	margin-top: 0.8rem;
+	color: #666666;
+}
+.C_content .box .top{
+	height: 2.7rem;
+	font-size: 0.5rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.C_content .box .top p{
+	float: left;
+	line-height: 2.7rem;
+	margin-left: 0.9rem;
+}
+.C_content .box .top span{
+	display: inline-block;
+	float: right;
+	line-height: 2.7rem;
+	margin-right: 0.87rem;
+	color: #f3992c;
+}
+.C_content .box ul li{
+	height: 6.58rem;
+}
+.C_content .box dl{
+	height: 100%;
+	padding: 0.9rem 0;
+}
+.C_content .box dl dt{
+	width: 4.8rem;
+	height: 4.8rem;
+	float: left;
+	margin-right:1.3rem;
+	
+}
+.C_content .box ul{
+	padding-left: 1.3rem;
+}
+.C_content .box ul li{
+	border-bottom: 1px solid #e6e6e6;
+}
+.C_content .box ul .last{
+	border-bottom: none;
+}
+.C_content .box dl dt img{
+	width: 100%;
+	height: 100%;
+}
+.C_content .box dl dd{
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+.C_content .box dl dd:nth-of-type(1){
+	font-size: 1.1rem;
+	color: #333333;
+}
+.C_content .box dl .price{
+	color: #f3992c;
+}

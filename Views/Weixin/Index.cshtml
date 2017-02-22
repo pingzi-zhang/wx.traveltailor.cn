@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+@section HeadRS {
+    <script type="text/javascript" language="javascript">
+    <!--
+
+    //-->
+    </script>
+}
+<div id="divMessage" style="width :100%; height :300px;clear :both ;">@ViewBag.ErrorMessage</div>
+@section FootRS {
+    <script type="text/javascript" language="javascript">
+    <!--
+        $(document).ready(function () {
+            var strError="@ViewBag.ErrorMessage";
+            if(strError==""){
+                var strUnionID=GetString("@ViewBag.UnionID");
+                if(strUnionID==""){
+                    alert("UnionID为空！");
+                    return false;
+                }
+                var strOpenID=GetString("@ViewBag.OpenID");
+                if(strOpenID==""){
+                    alert("OpenID为空！");
+                    return false;
+                }
+                window.localStorage.setItem("UnionID",strUnionID);
+                window.localStorage.setItem("OpenID",strOpenID);
+                jsgUnionID = strUnionID; jsgOpenID = strOpenID;
+                var intVisit = GetInt("@ViewBag.Visit");//访问：1首页；2定制；3我的；4管家主页；5商家主页
+                var strTargetID = GetString("@ViewBag.TargetID");//目标编码：4管家编码；5商家编码
+                GetMemberID();
+                //location.href = jsgSiteHost + "/Index.html";
+                //alert("strTargetID：" + strTargetID);
+                switch(intVisit){
+                    case 1:
+                        location.href =jsgSiteHost + "/Html5/Home/home.html";
+                        break;
+                    case 2:
+                        location.href = jsgSiteHost + "/Html5/Customized/CustomizedMessage.html";
+                        break;
+                    case 3:
+                        location.href =jsgSiteHost + "/Html5/Mine/mine.html";
+                        break;
+                    case 4:
+                        location.href = jsgSiteHost + "/Html5/Home/bulterHome.html?bulter_id=" + strTargetID;
+                        break;
+                    case 5:
+
+                        break;
+                }
+            }
+        });
+
+    //-->
+    </script>
+}
+

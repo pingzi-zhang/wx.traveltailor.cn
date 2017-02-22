@@ -1,0 +1,152 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #F5F5F5;
+}
+.C_content2{
+	width: 100%;
+	height: 100%;
+	overflow-y:auto;
+	padding-bottom:3.5rem;
+}
+.shops{
+	width: 26.675rem;
+	/* height: 12.886rem; */
+	background-color: #fff;
+}
+.shops li{
+	padding-top: 0.859rem;
+	padding-right: 0.859rem;
+	padding-bottom: 0.859rem;
+	height: 8.443rem;
+	border-bottom: 1px solid #ececec;
+	margin-left: 0.859rem;
+}
+.shops li .input{
+	outline:none;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.shops li img{
+	width: 4.725rem;
+	height: 4.725rem;
+	float: left;
+	margin-right: 0.751rem;
+}
+.shops .shops-detail{
+	/* width: 11.812rem; */
+	height: 4.725rem;
+	/* margin-left: 5.476rem; */
+	float: left;
+}
+.shops .shops-detail p:first-child{
+	margin-bottom: 0.859rem;
+	font-size: 0.945rem;
+	color: #333333;
+	font-weight: bold;
+}
+.shops .shops-detail p:nth-child(2){
+	font-size: 0.837rem;
+	color: #666666;
+}
+.shops .shops-detail p:last-child{
+	margin-top: 1.073rem;
+	font-size: 0.731rem;
+	color: #666666;
+}
+.shops .shops-detail p:last-child span{
+	color: #f3992c;
+}
+.shops .order_num{
+	float:right;
+	margin-top:2.3rem;
+	margin-right:1.5rem;
+	font-size:1.15rem;
+}
+.shops .choosedate{
+	width: 100%;
+	height: 1.3rem;
+	margin-top:5.5rem;
+}
+.shops .choosedate span{
+	float:left;
+}
+.shops .choosedate input{
+	margin-left: 1rem;
+}
+.message{
+	margin-top: 0.859rem;
+	background-color: #fff;
+}
+.message li{
+	height: 3.221rem;
+	border-bottom: 1px solid #ececec;
+	padding-left: 0.816rem;
+	line-height: 3.221rem;
+}
+.message li span{
+	color: #999999;
+}
+.message li input{
+	border: none;
+	outline: none;
+	width: 65%;
+	height: 90%;
+}
+.message .Verification{
+    position: relative; 
+    display: none;
+}
+.message .Verification .daojishi{
+    position: absolute;
+    right:.85rem;
+    top: 0.25rem;
+    width:6.05rem;
+    height:2.65rem;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    line-height: 2.65rem;
+    border-radius:5px;
+    background: #e6e6e6;
+    outline:none;
+    color: #999999;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	height: 3.221rem;
+}
+.footer .content{
+	width: 19.329rem;
+	height: 3.221rem;
+	padding-top: 0.579rem;
+	padding-left: 0.816rem;
+	padding-bottom: 0.579rem;
+	text-align: left;
+}
+.footer .content p:first-child{
+	margin-bottom: 0.429rem;
+	font-size: 0.945rem;
+	color: #f3992b;
+	font-weight: bold;
+}
+#pay_immediately{
+	border:none;
+	width: 7.345rem;
+	height: 3.221rem;
+	text-align: center;
+	line-height: 3.221rem;
+	color: #fff;
+	background-color: #f3992b;
+	font-size: 1.138rem;
+	font-weight: bold;
+}
+.Receipt_address{
+	display: none;
+}
+.detailed_address{
+	display: none;
+}

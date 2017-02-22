@@ -1,0 +1,366 @@
+@charset "utf-8";
+.fl{
+    float: left;
+}
+body{
+    position: relative;
+}
+.fr{
+    float: right;
+    margin-right: .5rem;
+}
+.C_content2 {
+    width: 100%;
+    height:100%;
+    overflow: auto;
+    background: #f5f5f5;
+    padding-bottom:3rem;
+}
+#footer{
+    width: 100%;
+    height: 3.41rem;
+    background-color: #ffffff;
+    color: #999999;
+    display: -webkit-box;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+    font-size: 0.64rem;
+}
+input{
+    border:none;
+    text-align: right;
+}
+.firstStep{
+    display: block;
+    background: #fff;
+}
+.bg{
+    width: 100%;
+    height: 0.86rem;
+    background-color: #f5f5f5;
+}
+.firstStep .tit-select{
+    width: 100%;
+    /*height: 9.721rem;*/
+}
+.firstStep .tit,.hotel{
+    /*width: 100%;*/
+    height: 3.2258rem;
+    line-height: 3.2258rem;
+    margin-left: 0.86rem;
+    /*margin-top: 1.1828rem;*/
+}
+.firstStep  h4{
+    display: inline-block;
+    font-size: 1.278rem;
+    color: #666666;
+    font-weight: 400;
+}
+.firstStep .tit-select .tit .tip{
+    -webkit-text-size-adjust: none;
+    font-size: 0.645rem;
+    color: #b4b4b4;
+}
+.firstStep .tit-select .link{
+    border: 0.043rem solid #e5e5e5;
+    margin-bottom: 0.86rem;
+}
+.firstStep .tit-select ul{
+    /*width: 100%;*/
+    height: 6rem;
+    margin-left: 0.86rem;
+}
+.firstStep .tit-select ul li{
+    float: left;
+    width: 5.59rem;
+    height: 2.15rem;
+    background-color: #f5f5f5;
+    color: #999;
+    margin: 0 0.86rem 0.86rem 0;
+    text-align: center;
+    line-height: 2.15rem;
+    -webkit-text-size-adjust: none;
+    font-size: 0.86rem;
+    border-radius: 0.1075rem;
+}
+.firstStep .tit-select ul .tourismbg{
+    background-color: orange;
+    color:#fff;
+}
+.firstStep .message{
+    position: relative;
+}
+.firstStep .message ul{
+    width: 25.80rem;
+    margin-left: 0.86rem;
+}
+.firstStep .message ul li{
+    /*width: 100%;*/
+    height: 3.22580rem;
+    border-top: 0.0215rem solid #f5f5f5;
+    line-height: 3.22580rem;
+    padding-right: 0.86rem;
+    color: #808080;
+    position:relative;
+}
+
+.firstStep .message ul .arrow:after{
+    content:""; 
+    display:block; 
+    width:.5rem; 
+    height:.5rem; 
+    position:absolute; 
+    right: .7rem;
+    top: 1.3rem; 
+    border-right: 1px solid #666;  
+    border-bottom: 1px solid #666;
+    border-top:transparent;
+    border-left:transparent;
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);   /* IE 9 */
+    -moz-transform:rotate(-45deg);  /* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg);
+}
+
+.firstStep .message ul li input {
+    /*float: right;*/
+    width: 20rem;
+    height: 2.150537rem;
+    /*line-height: 2.150537rem;*/
+    margin-top: 0.01763rem;
+    outline: none;
+}
+.firstStep .message ul li #data{
+    margin-top:.45rem;
+}
+.firstStep .message ul li input.num {
+    /*float: right;*/
+    width: 18.35487rem;
+    /*height: 2.150537rem;*/
+    /*line-height: 2.150537rem;*/
+    /*margin-top: 0.53763rem;*/
+}
+.firstStep .message ul li a{
+    color: #808080;
+}
+.firstStep .message ul li:nth-of-type(2) input{
+    float: right;
+    margin-right: .5rem;
+    margin-top: .45rem;
+    
+}
+::-webkit-input-placeholder { /* WebKit browsers */ 
+    color: #808080; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+    color: #808080; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    color: #808080; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+    color: #808080; 
+} 
+.firstStep .btn{
+    width: 100%;
+    height: 4.3443rem;
+    background-color: #f5f5f5;
+    padding-top: 0.86rem;
+}
+.firstStep .btn a{
+    display: block;
+    width: 24.989rem;
+    height: 3.2258rem;
+    background-color: #ef9500;
+    border-radius: 0.215rem;
+    text-align: center;
+    line-height: 3.2258rem;
+    margin: 0 auto;
+    color: #fff;
+}
+.message ul .adultgrown{
+    display: none;
+    width: 20%;
+    position: absolute;
+    background: #fff;
+    top: 16rem;
+    right: 4rem;
+    border: 1px solid #b1b3b5;
+    z-index: 9;
+    height: 97px;
+    overflow: scroll;
+}
+.message ul .adultgrown li{
+    height: 35px;
+    text-align: center;
+    list-style: none;
+    line-height: 35px;
+    border-bottom: 1px solid #eee;
+}
+.message ul .adultgrown li:after{
+    content:""; 
+    display:none;
+}
+.message ul .children{
+    display: none;
+    width: 20%;
+    position: absolute;
+    background: #fff;
+    top: 16rem;
+    right: .5rem;
+    border: 1px solid #b1b3b5;
+    z-index: 9;
+    height: 97px;
+    overflow: scroll;
+}
+.message ul .children li{
+    height: 35px;
+    text-align: center;
+    list-style: none;
+    line-height: 35px;
+    border-bottom: 1px solid #eee;
+}
+.message ul .children li:after{
+    content:""; 
+    display:none;
+}
+.message ul .children li:after{
+    content:""; 
+    display:none;
+}
+.hotel .weui_cell_hd{
+    width:25%;
+    float: left;
+}
+.hotel .weui_cell_bd{
+    width: 74%;
+    float: right;
+}
+.hotel .weui_cell_bd ul{
+    display: flex;
+}
+.hotel .weui_cell_bd ul li{
+    width: 1.55rem;
+    height: 1.55rem;
+    margin-right: .5rem;
+    position: relative;
+}
+.hotel .weui_cell_bd ul li img{
+    width: 100%;
+    height: 100%;
+}
+.hotel .weui_cell_hd .weui_label{
+    font-size: 1.45rem
+}
+
+/*手机联系人*/
+.secondStep{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: none;
+}
+.secondStep .main-message ul{
+    width: 25.80rem;
+    background-color: #fff;
+    padding-left: 0.86rem;
+}
+.secondStep .main-message ul li{
+    height: 3.22580rem;
+    border-top: 0.0215rem solid #f5f5f5;
+    line-height: 3.22580rem;
+    padding-right: 0.86rem;
+    color: #808080;
+}
+.secondStep .main-message ul li input{
+    float: right;
+    width: 20rem;
+    height: 2.150537rem;
+    margin-top: 0.763rem;
+    outline: none;
+}
+
+.secondStep .main-message ul li.last{
+    height: 6.4516rem;
+}
+.secondStep .main-message ul .Verification{
+    display: none;   
+    position: relative; 
+}
+.secondStep .main-message ul .Verification .codenum{
+    float:left;
+    text-align:left;
+    
+}
+.secondStep .main-message ul .Verification .daojishi{
+    position: absolute;
+    right:.85rem;
+    top: -0.5rem;;
+    width:6.05rem;
+    height:2.65rem;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    line-height: 2.65rem;
+    border-radius:5px;
+    background: #e6e6e6;
+    outline:none;
+    color: #999999;
+}
+.secondStep .submit{
+}
+.secondStep .submit a{
+    display: block;
+    width: 24.989rem;
+    height: 3.2258rem;
+    background-color: #ef9500;
+    border-radius: 0.215rem;
+    text-align: center;
+    line-height: 3.2258rem;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 1rem;
+}
+.secondStep .weui_cells {
+    margin-top: 1.17647059rem;
+    background-color: #fff;
+    line-height: 3.55rem;
+    font-size: 17px;
+    overflow: hidden;
+    position: relative;
+}
+.secondStep .weui_cell {
+    padding: 10px 15px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.secondStep .weui_cell_primary {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.secondStep .weui_cells_form textarea {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.secondStep .weui_textarea {
+    display: block;
+    border: 0;
+    resize: none;
+    width: 100%;
+    color: inherit;
+    font-size: .85rem;
+    line-height: inherit;
+    outline: 0;
+}
+.secondStep .weui_textarea_counter {
+    color: #b2b2b2;
+    text-align: right;
+}
+.secondStep .weui_textarea::-webkit-input-placeholder{
+    font-size:1rem;
+}

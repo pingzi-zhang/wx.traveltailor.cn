@@ -1,0 +1,458 @@
+body {
+  background-color: #f5f5f5;
+}
+section {
+  width: 100%;
+  padding-bottom: 3.86rem;
+  background-color: #fff;
+}
+section #homeBanner {
+  width: 100%;
+  height: 12.89rem;
+  overflow: hidden;
+}
+section #homeBanner img {
+  width: 100%;
+  height: 100%;
+}
+section .introduce1 h1 {
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #f4992e;
+  font-size: 1.07rem;
+  text-align: center;
+  padding: 1.29rem 0;
+}
+section .introduce1 p {
+  text-align: center;
+  padding-bottom: 1.44rem;
+}
+section .introduce1 p span {
+  margin-left: .5rem;
+}
+section .introduce1 p span img {
+  width: 0.92rem;
+  height: 0.92rem;
+  margin-right: .5rem;
+}
+section .introduce2 {
+  width: 100%;
+  padding-bottom: 1.22rem;
+}
+section .introduce2 .jieshao {
+  width: 100%;
+  height: 3.21rem;
+  line-height: 3.21rem;
+  text-indent: 2.2rem;
+}
+section .introduce2 .jieshao h3 {
+  font-size: 0.91rem;
+  background: url(../../Images/Home/titletiao.png) no-repeat 1rem 0.74rem;
+  background-size: 1% 54%;
+  color: #ff9500;
+}
+section .introduce2 .huimore {
+  width: 1rem;
+  height: auto;
+  position: absolute;
+  left: 50%;
+}
+section .introduce2 .content2 {
+  /* height:4.52rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding:0 0.86rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;*/
+  width: 100%;
+}
+section .introduce2 .content2 p {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  line-height: 1.52rem;
+  padding-bottom: 0.4rem;
+}
+section .foodtitle {
+  width: 100%;
+  height: 3.21rem;
+  line-height: 3.21rem;
+  text-indent: 2.2rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+section .foodtitle h3 {
+  font-size: 0.91rem;
+  background: url(../../Images/Home/titletiao.png) no-repeat 1rem 0.74rem;
+  background-size: 1% 54%;
+  color: #ff9500;
+}
+section .mstitle,
+section .mptitle,
+section .tctitle {
+  display: none;
+}
+section .fod_list {
+  width: 100%;
+}
+section .fod_list li {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 1rem;
+}
+section .fod_list li .info {
+  width: 96.8%;
+  margin-left: 3.2%;
+  height: 5.58rem;
+  padding-top: 0.86rem;
+  display: -webkit-box;
+}
+section .fod_list li .info .havebox {
+  -webkit-box-flex: 1;
+}
+section .fod_list li .info .foodImg {
+  width: 4.73rem;
+  height: 4.73rem;
+  margin-right: 0.86rem;
+  float: left;
+}
+section .fod_list li .info .foodImg img {
+  width: 100%;
+  height: 100%;
+}
+section .fod_list li .info .foodInfo {
+  -webkit-box-flex: 1;
+  height: 4.73rem;
+}
+section .fod_list li .info .foodInfo p:nth-child(1) {
+  margin-top: 0.32rem;
+  color: #333;
+}
+section .fod_list li .info .foodInfo p:nth-child(2) {
+  margin-top: 0.66rem;
+  color: #7a7a7a;
+}
+section .fod_list li .info .foodInfo p:nth-child(3) {
+  margin-top: 0.56rem;
+  color: #666;
+}
+section .fod_list li .info .foodPrice {
+  width: 7.43rem;
+  margin-top: 2.5rem;
+}
+section .fod_list li .info .foodPrice span {
+  float: left;
+  margin-left: 0.15rem;
+  width: 0.15rem;
+  height: 1.65rem;
+  line-height: 1.65rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.23rem;
+  background: none;
+  margin-right: 1rem;
+  color: #000;
+  display: none;
+}
+section .fod_list li .info .foodPrice button {
+  width: 2rem;
+  height: 2rem;
+  line-height: 1.65rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #ff9500;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+section .fod_list li .info .foodPrice .jia {
+  float: right;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+section .fod_list li .info .foodPrice .jian {
+  float: left;
+  background: none;
+  border: 1px solid #f3992c;
+  color: #f3992c;
+  display: none;
+  margin-right: 0.55rem;
+}
+section .fod_list li .spec {
+  width: 100%;
+  padding-top: 0.86rem;
+}
+section .fod_list li .spec span {
+  display: block;
+  float: left;
+  height: 1.07rem;
+  line-height: 1.07rem;
+  font-size: 7px;
+}
+section .fod_list li .spec span:nth-child(1) {
+  width: 1.07rem;
+  background-color: #63b635;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.1rem;
+  margin-left: 6.44rem;
+}
+section .fod_list li .spec span:nth-child(2) {
+  margin: 0  1.12rem 0 0.43rem;
+  color: #666;
+}
+section .fod_list li .spec span:nth-child(3) {
+  width: 1.07rem;
+  border-radius: 0.1rem;
+  background-color: #ff7239;
+  color: #fff;
+  text-align: center;
+  margin-right: 0.43rem;
+}
+.blank {
+  width: 100%;
+  height: 0.83rem;
+  background-color: #f5f5f5;
+}
+footer {
+  width: 100%;
+  height: 3.22rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  z-index: 7;
+  border-top: 1px solid #e6e6e6;
+}
+footer div {
+  -webkit-box-flex: 1;
+}
+footer div:nth-child(1) {
+  width: 19.33rem;
+  background-color: #fff;
+  position: relative;
+}
+footer div:nth-child(1) p {
+  line-height: 3.3rem;
+}
+footer div:nth-child(1) p:nth-child(1) {
+  color: #ff9500;
+  /*margin-top: 0.64rem;*/
+  margin-left: 0.96rem;
+}
+footer div:nth-child(1) p:nth-child(2) {
+  margin-top: 0.3rem;
+  margin-left: 0.96rem;
+}
+footer div:nth-child(1) p:nth-child(3) {
+  position: absolute;
+  width: 3.22rem;
+  height: 3.22rem;
+  border-radius: 3.22rem;
+  background-color: #f3992c;
+  top: -0.64rem;
+  left: 0.86rem;
+  text-align: center;
+}
+footer div:nth-child(1) p:nth-child(3) img {
+  width: 2rem;
+  height: auto;
+  position: absolute;
+  left: .6rem;
+  top: .7rem;
+}
+footer div:nth-child(2) {
+  -webkit-box-flex: 1;
+  background-color: #f3992c;
+  color: #fff;
+  font-size: 1.03rem;
+  text-align: center;
+  line-height: 3.22rem;
+  font-weight: bold;
+}
+footer div:nth-child(2) a {
+  color: #fff;
+}
+footer button {
+  -webkit-box-flex: 1;
+  width: 6rem;
+  height: 100%;
+  color: #fff;
+  background: #f3992c;
+  border: none;
+}
+.mask-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 6;
+  display: none;
+}
+.bulter_buy {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 3.2rem;
+  z-index: 6;
+  background: #fff;
+  display: none;
+}
+.bulter_buy .bulter_title {
+  width: 100%;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+.bulter_buy .bulter_title .bulter_gou {
+  float: left;
+  margin-left: 1.2rem;
+}
+.bulter_buy .bulter_title .bulter_q {
+  float: right;
+  margin-right: 1.2rem;
+}
+.bulter_buy .buy_info {
+  width: 96.8%;
+  margin-left: 3.2%;
+  height: 5.58rem;
+  padding-top: 0.86rem;
+  display: -webkit-box;
+  border-bottom: 1px solid #e6e6e6;
+}
+.bulter_buy .buy_info .foodImg {
+  width: 4.73rem;
+  height: 4.73rem;
+  margin-right: 0.86rem;
+}
+.bulter_buy .buy_info .foodImg img {
+  width: 100%;
+  height: 100%;
+}
+.bulter_buy .buy_info .foodInfo {
+  -webkit-box-flex: 1;
+  height: 4.73rem;
+}
+.bulter_buy .buy_info .foodInfo p:nth-child(1) {
+  margin-top: 0.32rem;
+  color: #333;
+}
+.bulter_buy .buy_info .foodInfo p:nth-child(2) {
+  margin-top: 0.66rem;
+  color: #7a7a7a;
+}
+.bulter_buy .buy_info .foodInfo p:nth-child(3) {
+  margin-top: 0.56rem;
+  color: #666;
+}
+.bulter_buy .buy_info .foodPrice {
+  width: 5.83rem;
+  height: 4.73rem;
+}
+.bulter_buy .buy_info .foodPrice span {
+  float: left;
+  margin-left: 0.15rem;
+  margin-top: 1.5rem;
+  width: 1.45rem;
+  height: 1.45rem;
+  line-height: 1.45rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #ff9500;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.bulter_buy .buy_info .foodPrice span:last-child {
+  float: right;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+.bulter_buy .buy_info .spec {
+  width: 100%;
+  padding-top: 0.86rem;
+}
+.bulter_buy .buy_info .spec span {
+  display: block;
+  float: left;
+  height: 1.07rem;
+  line-height: 1.07rem;
+  font-size: 7px;
+}
+.bulter_buy .buy_info .spec span:nth-child(1) {
+  width: 1.07rem;
+  background-color: #63b635;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.1rem;
+  margin-left: 6.44rem;
+}
+.bulter_buy .buy_info .spec span:nth-child(2) {
+  margin: 0  1.12rem 0 0.43rem;
+  color: #666;
+}
+.bulter_buy .buy_info .spec span:nth-child(3) {
+  width: 1.07rem;
+  border-radius: 0.1rem;
+  background-color: #ff7239;
+  color: #fff;
+  text-align: center;
+  margin-right: 0.43rem;
+}
+.bulter_buy .buy_cont .foodPrice {
+  width: 7.43rem;
+  margin-top: 2.5rem;
+}
+.bulter_buy .buy_cont .foodPrice span {
+  float: left;
+  margin-left: 0.15rem;
+  width: 0.15rem;
+  height: 1.65rem;
+  line-height: 1.65rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.23rem;
+  background: none;
+  margin-right: 1rem;
+  color: #000;
+  margin-top: 0;
+}
+.bulter_buy .buy_cont .foodPrice button {
+  width: 2rem;
+  height: 2rem;
+  line-height: 1.65rem;
+  text-align: center;
+  border-radius: 50%;
+  background: #ff9500;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+.bulter_buy .buy_cont .foodPrice .jia {
+  float: right;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+.bulter_buy .buy_cont .foodPrice .jian {
+  float: left;
+  background: none;
+  border: 1px solid #f3992c;
+  color: #f3992c;
+  margin-right: 0.55rem;
+}

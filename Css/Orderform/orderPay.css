@@ -1,0 +1,137 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #F5F5F5;
+}
+.order-title{
+	width: 26.632rem;
+	height: 3.865rem;
+	margin-top: 0.859rem;
+	background-color: #fff;
+	padding: 0.859rem;
+}
+.order-title img{
+	width: 2.157rem;
+	height: 2.157rem;
+	float: left;
+	margin-right: 0.859rem;
+}
+.order-title div{
+	/* width: 22.014rem; */
+	height: 2.225rem;
+	padding-left: 3.016rem;
+	/* float: right; */
+}
+.order-title div p:first-child{
+	margin-bottom: 0.644rem;
+	height: 0.945rem;
+}
+.order-title div p:last-child{
+	font-size: 0.665rem;
+	color: #666666;
+}
+.order-title div span:first-child{
+	float: left;
+	font-size: 0.945rem;
+	/* font-weight: bold; */
+}
+.order-title div span:last-child{
+	float: right;
+	font-size: 0.751rem;
+	color: #f3992b;
+}
+.line{
+	height: 1px;
+	background-color: #fff;
+	width: 3.801rem;
+}
+.line2{
+	height: 1px;
+	background-color: #fff;
+	width: 0.859rem;
+}
+.order-detail{
+	height: 3.221rem;
+	background-color: #fff;
+	padding-left: 3.801rem;
+	padding-right: 0.794rem;
+	line-height: 3.221rem;
+	color: #666666;
+}
+.order-detail span:first-child{
+	float: left;
+	font-size: 0.751rem;
+}
+.order-detail span:last-child{
+	float: right;
+	font-size: 0.665rem;
+}
+ul{
+	background-color: #fff;
+	padding-left: 0.816rem;
+	margin-top: 0.859rem;
+}
+ul:last-child{
+	margin-bottom: 0.859rem;
+}
+ul li{
+	height: 3.221rem;
+	line-height: 3.221rem;
+	border-bottom: 1px solid #e5e5e5;
+	
+}
+ul li span:first-child{
+	color: #999999;
+	font-size: 0.945rem;
+	/* font-weight: bold; */
+}
+ul li span:last-child{
+	color: #66666;
+	font-size: 0.816rem;
+	/* font-weight: bold; */
+}
+ul li:first-child{
+	height: 2.792rem;
+	line-height: 2.792rem;
+	font-size: 0.945rem;
+	color: #333333;
+}
+.manager,.shopper li span{
+	font-size: 1.031
+}
+.manager li span:last-child{
+	float: right;
+	margin-right: 0.794rem;
+}
+.shopper li span:last-child{
+	float: right;
+	margin-right: 0.794rem;
+}
+.footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	height: 3.221rem;
+	padding-right: 0.859rem;
+	padding-top: 0.644rem;
+	padding-bottom: 0.644rem;
+	padding-left: 21.521rem;
+}
+.footer a{
+	display: inline-block;
+	width: 4.295rem;
+	height: 1.932rem;
+	text-align: center;
+	line-height: 1.932rem;
+	color: #fff;
+	/* background-color: #f3992b; */
+	font-size: 0.751rem;
+	/* float: right; */
+	/* font-weight: bold; */
+	border-radius: 2px;
+	color: #f3992b;
+	border: 1px solid #f3992b;
+}

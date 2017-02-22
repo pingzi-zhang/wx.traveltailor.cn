@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="browsermode" content="application"/>
+    <meta name="imagemode" content="force">
+    <title>订单详情</title>
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../Css/public.css" rel="stylesheet"/>
+    <!-- 引用自己 -->
+    <link rel="stylesheet" type="text/css" href="../Css/Orderform/orderNopay.css">
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../Scripts/Global.js"></script>
+    <script type="text/javascript" src="../Js/ConifgTT3.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../Js/common.js"></script>
+    <!-- 引用插件 -->
+    <script src="../Js/lib/jquery.qrcode.min.js" type="text/javascript"></script>
+    <!-- 引用自己 -->
+    <script type="text/javascript" src="../Js/OrderDetails.js"></script>
+<style type="text/css">
+.bd{
+    width: 122px;
+    height: 127px;
+    position: absolute;
+    left: 34%;
+    top: 21%;
+    background: rgba(0,0,0,.8);
+    display: none;
+}
+</style>
+</head>
+<body>
+    <div class="C_content">
+        <!-- <div class="specialty_list">
+            <div>
+                <dl>
+                    <dt><img src="../Images/Home/food1.jpg" ></dt>
+                    <dd>
+                        <h4>都江堰特色猕猴桃</h4>
+                        <p>水果</p>
+                        <p><span>5</span>斤/箱</p>
+                        <p class="speprice">×<span>1</span></p>
+                    </dd>
+                </dl>   
+            </div>
+            
+            <div>
+                <dl>
+                    <dt><img src="../Images/Home/food1.jpg" ></dt>
+                    <dd>
+                        <h4>都江堰特色猕猴桃</h4>
+                        <p>水果</p>
+                        <p><span>5</span>斤/箱</p>
+                        <p class="speprice">×<span>2</span></p>
+                    </dd>
+                </dl>   
+            </div>
+        
+        </div>
+        
+        <div class="dimensional_code">
+            <p>消费码：<span>25876594</span></p>
+            <div id="code"></div>
+        </div>
+        <ul>
+            <li>订单信息</li>
+            <li><span>订&nbsp;&nbsp;单&nbsp;&nbsp;号：</span><span>101604285259879482</span></li>
+            <li><span>下单时间：</span><span>2016-11-29  17:10</span></li>
+            <li><span>联&nbsp;&nbsp;系&nbsp;&nbsp;人：</span><span>黄小逗</span></li>
+            <li><span>手机号码：</span><span>180 0000 0000</span></li>
+            <li><span>购买数量：</span><span>黄小逗</span></li>
+            <li><span>应付金额：</span><span>180元</span></li>
+        </ul>
+        <ul class="manager">
+            <li>管家信息</li>
+            <dl>
+                <dt><img src="../Images/Home/food1.jpg" ></dt>
+                <dd>
+                    <p>橙子器</p>
+                    <p>當地人</p>
+                </dd>
+            </dl>
+            <li><i></i><span>028-89706898</span></li>
+        </ul>
+         <ul class="shopper">
+             <li>商家信息</li>
+             <li><i></i><span>黄小逗/当地达人</span><span>＞</span></li>
+             <li><i></i><span>028-89706898</span><span>＞</span></li>
+        </ul>
+            
+         <div class="footer">
+            <div class="content">
+                <p>应付：￥<span>119.00</span></p>
+            </div>
+            <a href="">立即支付</a>
+        </div> -->
+    </div>
+    <div class="bd"></div>
+</body>
+</html>
+
+
+
+
+
+
+<!-- $(function(){
+    var strOrderID = GetParameterValue("strOrderID");
+    //alert("订单号：" + strOrderID);
+    var strPayResult = GetParameterValue("intResult");
+    //alert("支付结果：" + strPayResult);
+    if (strPayResult == "1") {
+        alert("成功");
+    }else if(strPayResult == "-1"){
+        alert("取消");
+    }else if(strPayResult == "0"){
+        alert("失败");
+    }
+}) -->

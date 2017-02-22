@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1,maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="browsermode" content="application"/>
+	<meta name="imagemode" content="force">
+    <title>管家主页</title>
+    <!-- 引用animate动画库 -->
+    <link type="text/css" href="../../Css/lib/animate.min.css" rel="stylesheet"/>
+    <!-- 引用字体库 -->
+    <link type="text/css" rel="stylesheet" href="../../fontawesome/css/font-awesome.css">
+    <!-- 引用公共样式 -->
+    <link type="text/css" href="../../Css/public.css" rel="stylesheet"/>
+    <!-- 引用轮播样式 -->
+    <link type="text/css" href="../../Css/lib/swiper-3.3.1.min.css" rel="stylesheet" />
+    <!-- 引用自己 -->
+    <link type="text/css" href="../../Css/Home/bulterHome.css" rel="stylesheet" />
+    <!-- 屏幕自适应 -->
+    <script type="text/javascript" src="../../Js/public.min.js"></script>
+    <!-- 引用zepto -->
+    <script type="text/javascript" src="../../Scripts/jquery-1.10.2.js"></script>
+    <!-- 引用后台共用 -->
+    <script type="text/javascript" src="../../Scripts/CryptoJs/crypto-js.js"></script>
+    <script type="text/javascript" src="../../Scripts/Global.js"></script>
+    <!-- 引用共用 -->
+    <script type="text/javascript" src="../../Js/common.js"></script>
+	<!-- 引用插件 -->
+	<script src="../../Js/lib/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../Js/Home/iscroll.js"></script>
+	<!-- 引用自己 -->
+	<script type="text/javascript" src="../../Js/Home/bulterhome.js"></script>
+</head>
+<body>
+	<!-- <header><a href="home.html"></a>管家主页</header> -->
+	<section>
+		<div  class="loadbox" style="display: block">
+			<div class="loading">
+				<i class="icono-gear spin"></i>正在加载中……
+			</div>
+		</div>
+		<div class="swiper-container" id="homeBanner">
+		    <div class="swiper-wrapper myWrapper" id="bulterWrapper">
+		       <!--  <div class="swiper-slide">
+		       	<img src="../../Images/Home/newblter2.jpg"/>
+		       </div>
+		       <div class="swiper-slide">
+		       	<img src="../../Images/Home/newblter2.jpg"/>
+		       </div>
+		       <div class="swiper-slide">
+		       	<img src="../../Images/Home/newblter2.jpg"/>
+		       </div> -->
+		    </div>
+		    <div class="swiper-pagination"></div>
+		</div>
+		<div class="introduce1">
+			<!-- <h1>胡玲</h1>
+			<p>
+				<span><img src="../../Images/Home/sex.jpg">女</span>
+				<span><img src="../../Images/Home/sex.jpg">24岁</span>
+				<span><img src="../../Images/Home/sex.jpg">成都</span>
+				<span><img src="../../Images/Home/sex.jpg">设计师</span>
+			</p> -->
+		</div>
+		<div class="blank"></div>
+		<div class="introduce2">
+			<div class="jieshao">
+				<h3 id="js1">自我介绍</h3>
+			</div>
+			<div class="content2">
+				<!-- <p>我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。
+				我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。
+				我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。
+				我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。
+				我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。
+				我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。
+				我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。
+				我是美味Rowena,是一位热爱绘画的川妹子。我是美味Rowena,是一位热爱绘画的川妹子。</p> -->
+			</div>
+			<!-- <img src="../../Images/Home/huimore.png" class="huimore" alt=""> -->
+		</div>
+		<div class="blank"></div>
+		<div class="bulter_content">
+			<div class="foodtitle mstitle"><h3>美食产品</h3></div>
+			<div class="fod_list" id="Delicious_food">
+				<!-- <li>
+					<div class="info">
+						<div class="foodImg">
+							<img src="../../Images/Home/food1.jpg" >
+						</div>
+							<div class="foodInfo">
+								<p>自贡小吃店</p>
+								<p>桌餐</p>
+								<p>￥<span class="price">10</span>/人</p>
+							</div>
+							<div class="foodPrice">
+								<span class="jian">-</span>
+								<span class="num">0</span>
+								<span class="jia chu">+</span>
+							</div>
+					</div>
+					<div class="spec">
+						<span>退</span>
+						<span>随时退</span>
+					</div>
+				</li>
+				<li>
+					<div class="info">
+						<div class="foodImg">
+							<img src="../../Images/Home/food1.jpg" >
+						</div>
+							<div class="foodInfo">
+								<p>特色纸包鱼</p>
+								<p>桌餐</p>
+								<p>￥<span class="price">5</span>/人</p>
+							</div>
+							<div class="foodPrice">
+								<span class="jian">-</span>
+								<span class="num">0</span>
+								<span class="jia chu">+</span>
+							</div>
+					</div>
+					<div class="spec">
+						<span>退</span>
+						<span>随时退</span>
+						<span>团</span>
+						<span>4-5人餐</span>
+					</div>
+				</li> -->
+			</div>
+
+			<div class="foodtitle mptitle"><h3>门票产品</h3></div>
+			<div class="fod_list" id="Admission_ticket">
+				<!-- <li onclick="location.href='businessProduct.html'">
+					<div class="info">
+						<div class="foodImg">
+							<img src="../../Images/Home/food1.jpg" >
+						</div>
+							<div class="foodInfo">
+								<p>四海一家（人民南路二段街）</p>
+								<p>自助餐</p>
+								<p>￥<span class="price">198</span>/人</p>
+							</div>
+							<div class="foodPrice">
+								<span class="jian">-</span>
+								<span class="num">0</span>
+								<span class="jia chu">+</span>
+							</div>
+					</div>
+					<div class="spec">
+						<span>退</span>
+						<span>随时退</span>
+						<span>团</span>
+						<span>4-5人餐</span>
+					</div>
+				</li> -->
+			</div>
+
+			<div class="foodtitle tctitle"><h3>特产产品</h3></div>
+			<div class="fod_list tc" id="Specialty">
+				<!-- <li>
+					<div class="info">
+						<div class="foodImg">
+							<img src="../../Images/Home/food1.jpg" >
+						</div>
+							<div class="foodInfo">
+								<p>四海一家（人民南路二段街）</p>
+								<p>自助餐</p>
+								<p>￥<span class="price">10</span>/人</p>
+							</div>
+							<div class="foodPrice">
+								<span class="jian">-</span>
+								<span class="num">0</span>
+								<span class="jia chu">+</span>
+							</div>
+					</div>
+					<div class="spec">
+						<span style="background: #ff9500">邮</span>
+						<span>包邮</span>
+					</div>
+				</li>
+				<li>
+					<div class="info">
+						<div class="foodImg">
+							<img src="../../Images/Home/food1.jpg" >
+						</div>
+							<div class="foodInfo">
+								<p>四海一家（人民南路二段街）</p>
+								<p>自助餐</p>
+								<p>￥<span class="price">5</span>/人</p>
+							</div>
+							<div class="foodPrice">
+								<span class="jian">-</span>
+								<span class="num">0</span>
+								<span class="jia chu">+</span>
+							</div>
+					</div>
+					<div class="spec">
+						<span style="background: #ff9500">邮</span>
+						<span>包邮</span>
+					</div>
+				</li> -->
+			</div>
+		</div>
+	</section>
+	<footer class="bulter_fbu">
+		<div>
+			<p>应付：￥<em class="lump">0</em></p>
+			<!-- <p>合计：￥<em class="lump">0</em> 优惠：￥0.00</p> -->
+			<!-- <p><img src="../../Images/Home/gouwuche.png" alt=""></p> -->
+		</div>
+		<button class="goplay">去结算</button>
+	</footer>
+	<div class="mask-layer"></div>
+	<div class="bulter_buy">
+		<div class="bulter_title">
+			<span class="bulter_gou">购物车</span>
+			<span class="bulter_q">清空</span>
+		</div>
+		<div class="buy_cont">
+			<!-- <div class="buy_info">
+				<div class="foodImg">
+					<img src="../../Images/Home/food1.jpg" >
+				</div>
+				<div class="foodInfo">
+					<p>四海一家（人民南路二段街）</p>
+					<p>自助餐</p>
+					<p>￥<span class="price">10</span>/人</p>
+				</div>
+				<div class="foodPrice">
+					<span class="jian">-</span>
+					<span class="num">0</span>
+					<span class="jia chu">+</span>
+				</div>
+			</div> -->
+
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	document.addEventListener('plusready', function(){
+		//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"		
+	});
+</script>
